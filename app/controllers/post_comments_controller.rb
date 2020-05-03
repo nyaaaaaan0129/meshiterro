@@ -7,7 +7,7 @@ class PostCommentsController < ApplicationController
 		redirect_to post_image_path(post_image)
     end
     private
-    def post_comment_paramas
+    def post_comment_params
     	params.require(:post_comment).permit(:comment)
     end
 end
